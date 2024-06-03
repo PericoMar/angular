@@ -1,0 +1,35 @@
+<div class="home">
+	<ngb-carousel>
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[0]" alt="Random first slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>Mejora tu dieta</h3>
+				<p>Aprende a llevar una dieta equilibrada y sana. ¡Y sin pasar hambre!</p>
+			</div>
+		</ng-template>
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[1]" alt="Random second slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>Empieza a amar el deporte</h3>
+				<p>Con entrenamientos personalizados para tu cuerpo y gustos.</p>
+			</div>
+		</ng-template>
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[2]" alt="Random third slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>Mejora tu forma fisica</h3>
+				<p>Disfruta de los resultados de hacer las cosas bien.</p>
+			</div>
+		</ng-template>
+	</ngb-carousel>
+	<div class="buttons">
+	<button class="home-button" (click)="abrirModalLogin()">INICIA SESIÓN</button>
+	<button class="home-button" (click)="abrirModalRegister()">¡UNETE AL EQUIPO!</button>
+</div>
+</div>

@@ -1,0 +1,8 @@
+footer{
+    color: rgb(193, 193, 193);
+    background-color: black;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,41 @@
+.caroursel{
+    height: 600px;
+}
+
+.home{
+    padding: 0px 400px;
+}
+
+img{
+    height: 500px;
+    width: 1000px!important;
+    opacity: 0.2;
+}
+.picsum-img-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+.home-button{
+    margin: 80px 0px 145px 0px;
+    background-color: green;
+    border:2px solid greenyellow;
+    color: white;
+    width: 300px;
+    height: 60px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all;
+}
+
+.home-button:hover{
+    background-color: rgb(1, 80, 1);
+    border-color: rgb(109, 160, 32);
+}
