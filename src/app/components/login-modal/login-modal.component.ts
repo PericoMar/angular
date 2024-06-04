@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -10,7 +10,7 @@ import { UserService } from '../../services/user.service';
 @Component({
   selector: 'app-login-modal',
   standalone: true,
-  imports: [MatIconModule, MatFormFieldModule, ReactiveFormsModule],
+  imports: [MatIconModule, MatFormFieldModule, ReactiveFormsModule, MatDialogModule],
   templateUrl: './login-modal.component.html',
   styleUrl: './login-modal.component.css'
 })

@@ -3,11 +3,12 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginModalComponent } from '../../components/login-modal/login-modal.component';
 import { RegisterModalComponent } from '../../components/register-modal/register-modal.component';
 import { MatDialog } from '@angular/material/dialog';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgbCarouselModule],
+  imports: [NgbCarouselModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
