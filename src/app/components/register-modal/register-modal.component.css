@@ -37,6 +37,7 @@ main{
 
 .register-form{
     display: flex;
+    width: 80%;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
@@ -46,7 +47,7 @@ main{
 .form-group{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
 .form-control {
@@ -144,5 +145,18 @@ main{
     background-color: #CCCCCC; /* Color de fondo cuando está deshabilitado */
     color: #666666; /* Color del texto cuando está deshabilitado */
     cursor: not-allowed; /* Cambiar el cursor cuando está deshabilitado */
+  }
+
+  .gender-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .gender-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 

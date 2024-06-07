@@ -6,6 +6,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterModalComponent } from '../register-modal/register-modal.component';
 import { UserService } from '../../services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-modal',
@@ -23,7 +24,8 @@ export class LoginModalComponent {
     private dialogRef: MatDialogRef<LoginModalComponent>, 
     private fb: FormBuilder,
     private _matDialog: MatDialog,
-    private userService : UserService
+    private userService : UserService,
+    private router : Router
   ) { }
 
   ngOnInit(): void {
@@ -44,7 +46,7 @@ export class LoginModalComponent {
         user => {
           console.log('Usuario logueado:', user);
           this.userService.loginUser(user);
-          this.reloadPage();
+          this.router.navigate(['/dashboard']);
           this.dialogRef.close();
         },
         error => {

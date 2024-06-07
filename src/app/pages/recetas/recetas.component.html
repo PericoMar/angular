@@ -1,0 +1,18 @@
+<main class="recetas">
+    <h1>RECETAS PARA {{this.getObjetivo() }}</h1>
+    @for(receta of recetas ; track receta.receta_id){
+        <div class="receta">
+            <header>
+                <img [src]="receta.imagen" alt="">
+                <h1>{{ receta.nombre }}</h1>
+            </header>
+            <p>{{ receta.descripcion}}</p>
+            <div style="display: flex; justify-content: space-around;">
+            <span class="calorias">Calorias: {{ receta.calorias}}kcal</span>
+            <span class="proteinas">Proteinas: {{receta.proteinas}}</span>
+            <span class="grasas">Grasa: {{receta.grasa}}</span>
+            <span class="carbohidratos">Carbohidratos: {{receta.carbohidratos}}</span>
+            </div>
+        </div>
+    }
+</main>

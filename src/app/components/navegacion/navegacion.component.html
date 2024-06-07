@@ -1,10 +1,12 @@
 <div class="navbar">
+    <div style="display:flex; align-items: center;">
+    <img src="../../../assets/logo.jpeg" alt="" style="width: 100px;">
     <h1 class="logo">TUNUTRI.COM</h1>
+    </div>
     <div class="navbar-options">
-        <a>Inicio</a>
-        <a>Acerca de</a>
-        <a>Iniciar Sesion</a>
-        <a>Crear cuenta</a>
+        <a routerLink="">Inicio</a>
+        <a (click)="openModalLogin()">Iniciar Sesion</a>
+        <a (click)="openModalRegister()">Crear cuenta</a>
     </div>
 </div>
 

@@ -1,0 +1,31 @@
+<main class="dashboard">
+    <header>
+        @if(user.sexo == "male"){
+            <img src="../../../assets/male-icon-15.png" alt="" class="gender">
+        } @else if(user.sexo == "female"){
+            <img src="../../../assets/female.png" alt="" class="gender">
+        }
+        <div>
+        <h1>PANEL {{ user.nombre | uppercase }}</h1>
+        <h1>{{ this.getObjetivo()}}</h1>
+        </div>
+    </header>
+    <main>
+        <div style="background-color:white; height: 400px; border-radius: 4px;">
+        <ag-charts-angular 
+            [options]="options" 
+            style="width: 90%; height: 90%; border-radius: 4px;">
+        </ag-charts-angular>
+    </div>
+    <form [formGroup]="weightForm" (ngSubmit)="addWeight()">
+        <h3>Peso actual: {{ this.pesos[this.pesos.length - 1].peso}}kg</h3>
+        <h3>Altura: {{ user.altura }}cm</h3>
+        <div>
+        <label for="newWeight">Nuevo Peso:</label>
+        <input id="newWeight" type="number" formControlName="newWeight" required>
+        <button type="submit" [disabled]="!weightForm.valid">Añadir Peso</button>
+        </div>
+    </form>
+    <button routerLink="/recepies" class="recepies">Recetas Recomendadas</button>
+    </main>
+</main>

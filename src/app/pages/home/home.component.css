@@ -1,9 +1,10 @@
 .caroursel{
-    height: 600px;
+    height: 300px;
 }
 
 .home{
-    padding: 0px 400px;
+    padding: 0px 300px;
+    height: 740px;
 }
 
 img{
